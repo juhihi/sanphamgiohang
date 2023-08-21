@@ -1,0 +1,22 @@
+package com.demogiohang.service;
+
+import java.util.List;
+
+import com.demogiohang.entity.Account;
+
+public interface AccountService {
+	public List<Account> findAll();
+
+	public Account findById(String username);
+
+	public List<Account> getAdministrators();
+
+	public Account update(Account account);
+
+	public void deleteById(String username);
+
+	public Account create(Account account);
+
+	public List<Account> findRequest(String string);
+
+}
